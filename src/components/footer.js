@@ -24,7 +24,7 @@ class Footer extends Component {
     render() {
         return (
             <CtxConsumer>
-                {context => {
+                {context => (
                     <div>
                         {context.animals && context.animals.map(animal => {
                             return (
@@ -34,7 +34,7 @@ class Footer extends Component {
                             );
                         }) }
                     </div>
-                }}
+                )}
             </CtxConsumer>    
         );
     }
